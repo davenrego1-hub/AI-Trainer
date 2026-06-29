@@ -83,6 +83,12 @@ button,select,input{font:inherit}button{border:0;border-radius:8px;padding:12px 
 </nav>
 
 <script>
+  function getYouTubeLink(exerciseName) {
+  const query = encodeURIComponent(
+    exerciseName + " exercise tutorial"
+  );
+  return `https://www.youtube.com/results?search_query=${query}`;
+}
 const muscles=["Chest","Back","Shoulders","Biceps","Triceps","Legs","Abs"];
 const adv=["Upper Chest","Lower Chest","Lats","Traps","Rear Delts","Quads","Hamstrings","Calves","Glutes"];
 const rules={"Muscle Gain":["4 sets","8-12 reps","60-90 sec rest"],"Fat Loss":["3 sets","15-20 reps","30-45 sec rest"],Strength:["5 sets","3-6 reps","2-3 min rest"],Recomp:["4 sets","8-15 reps","60 sec rest"]};
